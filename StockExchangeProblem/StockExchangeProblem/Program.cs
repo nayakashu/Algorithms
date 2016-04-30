@@ -10,10 +10,20 @@ namespace StockExchangeProblem
     {
         static void Main(string[] args)
         {
-            int[] stockPrices = { 10, 5, 4,  1 };
-            int maxProfit = GetMaxProfit(stockPrices);
+            //int[] stockPrices = { 10, 5, 4,  1 };
+            //int maxProfit = GetMaxProfit(stockPrices);
 
-            Console.WriteLine(maxProfit);
+            //Console.WriteLine(maxProfit);
+
+            // Product of Other Numbers
+
+            ProductOfOtherNumbers.inputArray = new int[] {1, 2, 6, 5, 9};
+            ProductOfOtherNumbers.ComputeProduct();
+
+            foreach (int i in ProductOfOtherNumbers.outputArray)
+                Console.Write(i.ToString() + " ");
+
+            Console.ReadLine();
         }
 
         static int GetMaxProfit(int[] stockPrices)
