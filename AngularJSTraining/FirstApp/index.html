@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>First Angular APP</title>
 </head>
-<body>
+<body ng-app="demoApp" ng-controller="SimpleController">
 
+	<h3>Modules and Controllers</h3>
+	<p ng-repeat="cust in customers">
+	Name: {{ cust.Name }} | City: {{ cust.City }}
+	</p>
+	<!-- Include AngularJS from Google's CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script>
+		
+		var demoApp = angular.module('demoApp', []);
+
+		var controllers = {};
+
+		var customer = { Name : 'David Jones', City : 'Bangalore' };
+
+		var simpleController = function($scope) {
+			$scope.customers = [
+				customer,
+				customer,
+				{ Name : 'Jack Willis', City : 'Hyderabad' },
+				{ Name : 'John Doe', City : 'Mysore' }
+			];
+		}; 
+
+		controllers.SimpleController = simpleController;
+
+		demoApp.controller(controllers);
+
+
+	</script>
 </body>
 </html>
