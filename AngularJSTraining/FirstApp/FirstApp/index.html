@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html ng-app="employeeModule">
+<head>
+    <title></title>
+</head>
+<body>
+    <ul ng-controller="employeeController">
+        <li ng-repeat="employee in employees">
+            Name : {{ employee.Name }} | Company : {{ employee.Company }}
+        </li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="Scripts/myScript.js"></script>
+</body>
+</html>
