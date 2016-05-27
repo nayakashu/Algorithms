@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Gateway</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="">
+	<div class="content">
+		<span class="label">Quantity</span>
+		<input type="text" name="txtQuantity" id="txtQuantity" style="width: 190px">
+		<br />
+		<span class="label">Costs</span>
+		<input type="text" name="txtCost" id="txtCost">
+		<select id="currency" class="currencyDropDown">
+			<option value="USD">USD</option>
+			<option value="EUR">EUR</option>
+			<option value="IND">IND</option>
+		</select>
+
+		<span class="label">
+			<strong>Total: </strong>
+			USD 2.70 | EUR 1.20 | INR 2400
+		</span>
+		<br />
+		<input type="button" name="btnPay" id="btnPay" value="Pay Now">
+	</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+<script type="text/javascript" src="scripts\app_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+html, body {
+  font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
+.content {
+  margin: 20px;
+}
+
+input[type="text"], input[type="button"] {
+  font-family: inherit;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  background: #0072c6;
+  color: #FFF;
+  cursor: pointer;
+  width: 250px;
+}
+
+.label {
+  margin-bottom: 3px;
+  color: #0072c6;
+  font-size: 90%;
+}
+
+.currencyDropDown {
+  font-family: inherit;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #AAA;
+  margin-bottom: 10px;
+}
+
